@@ -21,7 +21,7 @@ eureka:
 
 spring:
   application:
-    name: auth
+    name: APP-SERVICES-AUTH
 #  datasource:
 #    driver-class-name: org.postgresql.Driver
 #    url: jdbc:postgresql://localhost:5433/oauth_db
