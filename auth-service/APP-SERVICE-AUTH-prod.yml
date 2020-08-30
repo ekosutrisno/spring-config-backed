@@ -17,7 +17,7 @@ eureka:
     healthcheck:
       enabled: true
     serviceUrl:
-      defaultZone: http://localhost:8090/eureka
+      defaultZone: http://localhost:8089/eureka
 
 spring:
   application:
