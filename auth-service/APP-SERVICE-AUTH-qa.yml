@@ -1,5 +1,5 @@
 server:
-  port: 8090
+  port: 8081
 
 eureka:
   instance:
@@ -7,7 +7,7 @@ eureka:
     lease-renewal-interval-in-seconds: 10
     lease-expiration-duration-in-seconds: 2
     prefer-ip-address: true
-    status-page-url: http://localhost:8090/swagger-ui.html
+    status-page-url: http://localhost:8081/swagger-ui.html
     virtual-host-name: app-services-auth
     hostname: localhost
     ip-address: localhost
@@ -17,7 +17,7 @@ eureka:
     healthcheck:
       enabled: true
     serviceUrl:
-      defaultZone: https://localhost:7546/eureka
+      defaultZone: https://localhost:8090/eureka
 
 spring:
   application:
