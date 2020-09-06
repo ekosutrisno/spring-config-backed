@@ -5,7 +5,7 @@ server:
 #Spring Config
 spring:
   application:
-    name: APP-SERVICE-GATEWAY
+    name: APP-SERVICES-GATEWAY
 
 #Zull Config
 zuul:
@@ -18,7 +18,7 @@ zuul:
       serviceId: APP-SERVICES-AUTH
     app-service-config:
       path: /app-service-config/**
-      serviceId: APP-CONFIG-SERVER
+      serviceId: APP-SERVICES-CONFIG
 
 #Ribbon Config
 ribbon:
@@ -40,7 +40,7 @@ APP-SERVICES-AUTH: #LOCAL AUTH SERVICE
     ReadTimeout: 3000
     MaxTotalHttpConnections: 500
     MaxConnectionsPerHost: 100
-APP-CONFIG-SERVER: #LOCAL AUTH SERVICE
+APP-SERVICES-CONFIG: #LOCAL CONFIG SERVICE
   ribbon:
     listOfServers: http://localhost:8088
     ConnectTimeout: 1000
@@ -52,7 +52,7 @@ APP-CONFIG-SERVER: #LOCAL AUTH SERVICE
 #Ureka config
 eureka:
   instance:
-    instance-id: APP-SERVICE-GATEWAY
+    instance-id: APP-SERVICES-GATEWAY
     lease-renewal-interval-in-seconds: 10
     lease-expiration-duration-in-seconds: 2
     prefer-ip-address: true
